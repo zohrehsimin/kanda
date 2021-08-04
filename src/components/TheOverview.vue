@@ -9,10 +9,11 @@ export default {};
     <div class="firt-part__item">
       <div class="first-part__item--arrowdown">
        
-<svg class="arrowdown-icon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <path d="M 281.278 37.46 H 729.781 L 719.781 -3.091 L 753.278 44.909 L 719.781 92.909 L 729.781 52.358 H 281.278 V 37.46 Z" style="stroke-width: 4px;" transform="matrix(-0.000067, 1, -1, -0.000067, 255.988098, -254.13913)" bx:shape="arrow 281.278 -3.091 472 96 14.898 33.497 10 1@911ae820" bx:origin="0.501 0.499998"/>
-</svg>
 
+<svg class="arrowdown-icon"  xmlns="http://www.w3.org/2000/svg" width="20px" height="211px">
+<line x1="10" y1="0" x2="10" y2="210" fill="none" stroke="gray" />
+<polyline points="1,200 10,210 19,200" fill="none" stroke="gray" />
+</svg>
   
       </div>
       <article class="first-part__item--article">
@@ -61,7 +62,7 @@ export default {};
             <rect width="110" height="50" fill="white" />
           </clipPath>
         </defs>
-        <!-- Code injected by live-server -->
+      
         
       </svg>
     </div>
@@ -79,23 +80,23 @@ export default {};
     <div class="statistics">
       <h2>75</h2>
       <h4>Fields</h4>
-      <h5>WORDLWIDE</h5>
+      <h6>WORDLWIDE</h6>
     </div>
     <div class="statistics">
       <h2>45</h2>
       <h4>Active</h4>
 
-      <h5>& COMPLETED PROJECTS</h5>
+      <h6>& COMPLETED PROJECTS</h6>
     </div>
     <div class="statistics">
       <h2>150</h2>
       <h4>Personnel</h4>
-      <h5>Full-Time & <br>Part-Time Colleagues</h5>
+      <h6>Full-Time & <br>Part-Time Colleagues</h6>
     </div>
     <div class="statistics">
       <h2>30</h2>
       <h4>Master</h4>
-      <h5>and PhD STUDENTS</h5>
+      <h6>and PhD STUDENTS</h6>
     </div>
   </div>
 </template>
@@ -107,18 +108,16 @@ export default {};
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-color: red; */
   width:96vw;
-  height: 46vh;
+  height: 48vh;
   margin: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
   
 }
 .firt-part__item {
-    /* background-color: rebeccapurple; */
   width: 46%;
-  height: 38vh;
+  height: 40vh;
   padding-top: 1rem;
   display: flex;
   flex-direction: row;
@@ -126,53 +125,97 @@ export default {};
 
 }
 .first-part__item--arrowdown{
-/* background-color: burlywood; */
 width: 2.5rem;
 padding-top: 2.8rem;
 margin-right: 1.3rem;
 }
 .arrowdown-icon{
-
-  width: 2rem;
+  /* width:1rem; */
     fill: gray;
 }
 
+@media (min-width: 45rem){
+.first-part__item--article-title{
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}}
+
+
+@media (min-width: 64rem){
 .first-part__item--article-title{
     font-size: 2.6rem;
     margin-bottom: -1rem;
-}
+}}
+
+
+@media (min-width: 45rem){
 .first-part__item--article-header {
-    font-size: 2rem;
+    font-size: 1.1rem;
+    font-family: "DIN-Light";
+    line-height: 1.2;
+  color: #0100fd;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: -.3rem;
+}}
+
+@media (min-width: 64rem){
+.first-part__item--article-header {
+    font-size: 1.9rem;
+    font-family: "DIN-Light";
+    line-height: 1.2;
   color: #0100fd;
   font-weight: 100;
   letter-spacing: 3px;
-  margin-bottom: -.5rem;
-}
+  margin-bottom: -.3rem;
+}}
+
 .first-part__item--article-par{
     color: gray;
-    /* font-weight: 100; */
-    font-size: 1.1rem;
+    line-height: 1.6;
+    font-size: 1rem;
     
 }
 
 
+@media (min-width: 45rem){
+
 .first-part__svg{
-     width: 46%;
-  height: 38vh;
+  width: 46%;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 3rem;
+}}
 
-  
-  }
+
+@media (min-width: 64rem){
+
+.first-part__svg{
+  width: 46%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}}
+
+@media (min-width: 45rem){
+.overview-icon{
+    width: 18rem;
+    height: 10rem;
+}
+}
+
+@media (min-width: 64rem){
 .overview-icon{
     width: 28rem;
     height: 14rem;
-
+}
 }
 .second-part__flex {
-/* background-color: yellow; */
+
   width: 96vw;
   margin: auto;
   display: flex;
@@ -181,25 +224,26 @@ margin-right: 1.3rem;
 }
 .statistics{
     width: 10%;
-    /* background-color: palevioletred; */
+   
     
 
 }
 h2,h4{
-    margin-bottom: -1.3rem;
+    margin-bottom: -1rem;
 }
 h2 {
   color: #0100fd;
-  font-weight: 900;
+  font-family: "DIN-Bold";
 }
 
 h4{
-    color: gray;
+    color: rgb(110, 110, 110);
+  font-weight: lighter;
 
 }
-h5 {
+h6 {
   color: gray;
-  font-weight: 100;
+  font-family: "DIN-Light";
 }
 
 </style>

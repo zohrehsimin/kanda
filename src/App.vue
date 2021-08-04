@@ -18,23 +18,37 @@ export default {
 <template>
   <TheKandaidea></TheKandaidea>
   <TheOverview></TheOverview>
-
   <OurProjects></OurProjects>
   <TheFooter></TheFooter>
 </template>
 
 <style>
 @font-face {
-  font-family: "DIN" ;
-  src: url('/fonts/DIN Alternate Black.ttf');
+  font-family: "DIN-Medium" ;
+  src: url('/fonts/DIN Alternate Medium.ttf');
   font-weight: normal;
 }
+@font-face {
+  font-family: "DIN-Light" ;
+  src: url('/fonts/DIN Alternate Light.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DIN-Bold" ;
+  src: url('/fonts/DIN Alternate Bold.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DIN" ;
+  src: url('/fonts/DIN Medium.ttf');
+  font-weight: normal;
+}
+
 html{
-  font-family: "DIN", Arial, sans-serif, Helvetica ;
+  font-family: "DIN-Medium", Arial, sans-serif, Helvetica ;
 }
 #app {
 
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
 font-size:16px;
 }
 </style>
